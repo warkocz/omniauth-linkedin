@@ -7,7 +7,7 @@ module OmniAuth
 
       option :client_options, {
         :site => 'https://api.linkedin.com',
-        :request_token_path => '/uas/oauth/requestToken',
+        :request_token_path => '/uas/oauth/requestToken?scope=r_fullprofile+r_emailaddress',
         :access_token_path => '/uas/oauth/accessToken',
         :authorize_url => 'https://www.linkedin.com/uas/oauth/authenticate'
       }
